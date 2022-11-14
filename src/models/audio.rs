@@ -15,7 +15,12 @@ pub struct AudioMeta {
     pub duration: u32,
 }
 
-#[derive(Debug, Clone, Deserialize)]
-pub struct Query {
+#[derive(Debug, Deserialize)]
+pub struct Name {
+    pub name: String
+}
 
+#[derive(Debug, Deserialize)]
+pub struct Duration {
+    pub maxduration: Option<u32>
 }
